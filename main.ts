@@ -7,7 +7,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleBlueCrystal, f
     scene.setBackgroundColor(4)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
-    info.setScore(10)
+    info.setScore(20)
 })
 let mySprite: Sprite = null
 let myEnemy = sprites.create(img`
