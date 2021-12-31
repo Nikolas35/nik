@@ -36,6 +36,7 @@ let myEnemy = sprites.create(img`
     ........................
     ........................
     `, SpriteKind.Player)
+tiles.setTilemap(tilemap`level3`)
 info.setLife(3)
 mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
