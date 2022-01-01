@@ -3,8 +3,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleBlueCrystal, function (sprite, location) {
     effects.confetti.startScreenEffect()
-    game.over(true)
-    scene.setBackgroundColor(4)
+    effects.confetti.startScreenEffect()
+    game.over(true, effects.splatter)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
     info.setScore(20)
